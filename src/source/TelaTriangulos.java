@@ -42,14 +42,29 @@ public class TelaTriangulos extends javax.swing.JFrame {
         sliderLado1.setMaximum(27);
         sliderLado1.setMinimum(1);
         sliderLado1.setValue(14);
+        sliderLado1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sliderLado1StateChanged(evt);
+            }
+        });
 
         sliderLado2.setMaximum(27);
         sliderLado2.setMinimum(1);
         sliderLado2.setValue(14);
+        sliderLado2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sliderLado2StateChanged(evt);
+            }
+        });
 
         sliderLado3.setMaximum(27);
         sliderLado3.setMinimum(1);
         sliderLado3.setValue(14);
+        sliderLado3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sliderLado3StateChanged(evt);
+            }
+        });
 
         jLabel1.setText("Lado1:");
 
@@ -112,6 +127,18 @@ public class TelaTriangulos extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void sliderLado1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliderLado1StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sliderLado1StateChanged
+
+    private void sliderLado2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliderLado2StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sliderLado2StateChanged
+
+    private void sliderLado3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliderLado3StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sliderLado3StateChanged
 
     /**
      * @param args the command line arguments

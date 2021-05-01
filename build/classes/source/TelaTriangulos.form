@@ -85,6 +85,9 @@
         <Property name="minimum" type="int" value="1"/>
         <Property name="value" type="int" value="14"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="sliderLado1StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="sliderLado2">
       <Properties>
@@ -92,6 +95,9 @@
         <Property name="minimum" type="int" value="1"/>
         <Property name="value" type="int" value="14"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="sliderLado2StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSlider" name="sliderLado3">
       <Properties>
@@ -99,6 +105,9 @@
         <Property name="minimum" type="int" value="1"/>
         <Property name="value" type="int" value="14"/>
       </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="sliderLado3StateChanged"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
