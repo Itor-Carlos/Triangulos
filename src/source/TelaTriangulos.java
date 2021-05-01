@@ -129,15 +129,18 @@ public class TelaTriangulos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void sliderLado1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliderLado1StateChanged
-        // TODO add your handling code here:
+        int valorAtualSlider1 = sliderLado1.getValue();
+        lblExibeLado1.setText(Integer.toString(valorAtualSlider1));
     }//GEN-LAST:event_sliderLado1StateChanged
 
     private void sliderLado2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliderLado2StateChanged
-        // TODO add your handling code here:
+        int valorAtualSlider2 = sliderLado1.getValue();
+        lblExibeLado2.setText(Integer.toString(valorAtualSlider2));
     }//GEN-LAST:event_sliderLado2StateChanged
 
     private void sliderLado3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliderLado3StateChanged
-        // TODO add your handling code here:
+        int valorAtualSlider3 = sliderLado1.getValue();
+        lblExibeLado3.setText(Integer.toString(valorAtualSlider3));
     }//GEN-LAST:event_sliderLado3StateChanged
 
     /**
