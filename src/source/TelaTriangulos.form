@@ -43,12 +43,15 @@
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="lblExibeLado1" pref="51" max="32767" attributes="0"/>
-                  <Component id="lblExibeLado2" alignment="0" max="32767" attributes="0"/>
-                  <Component id="lblExibeLado3" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="lblExibeLado1" pref="51" max="32767" attributes="0"/>
+                      <Component id="lblExibeLado2" alignment="0" max="32767" attributes="0"/>
+                      <Component id="lblExibeLado3" max="32767" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="234" max="32767" attributes="0"/>
+              <EmptySpace pref="268" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -73,7 +76,9 @@
                   <Component id="sliderLado3" max="32767" attributes="0"/>
                   <Component id="lblExibeLado3" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="158" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="71" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -137,6 +142,11 @@
     <Component class="javax.swing.JLabel" name="lblExibeLado3">
       <Properties>
         <Property name="text" type="java.lang.String" value="14"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
     </Component>
   </SubComponents>
