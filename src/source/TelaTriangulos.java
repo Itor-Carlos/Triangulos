@@ -48,11 +48,11 @@ public class TelaTriangulos extends javax.swing.JFrame {
         sliderLado3.setMinimum(1);
         sliderLado3.setValue(14);
 
-        jLabel1.setText("jLabel1:");
+        jLabel1.setText("Lado1:");
 
-        jLabel2.setText("jLabel2:");
+        jLabel2.setText("Lado 2:");
 
-        jLabel3.setText("jLabel3:");
+        jLabel3.setText("Lado 3:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -73,7 +73,7 @@ public class TelaTriangulos extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(sliderLado1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(288, Short.MAX_VALUE))
+                .addContainerGap(291, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
