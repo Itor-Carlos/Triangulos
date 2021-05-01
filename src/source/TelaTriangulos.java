@@ -36,7 +36,7 @@ public class TelaTriangulos extends javax.swing.JFrame {
         lblExibeLado1 = new javax.swing.JLabel();
         lblExibeLado2 = new javax.swing.JLabel();
         lblExibeLado3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        buttonVerificar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -79,7 +79,7 @@ public class TelaTriangulos extends javax.swing.JFrame {
 
         lblExibeLado3.setText("14");
 
-        jButton1.setText("VERIFICAR");
+        buttonVerificar.setText("VERIFICAR");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -108,7 +108,7 @@ public class TelaTriangulos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(281, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(buttonVerificar)
                 .addGap(266, 266, 266))
         );
         layout.setVerticalGroup(
@@ -130,7 +130,7 @@ public class TelaTriangulos extends javax.swing.JFrame {
                     .addComponent(sliderLado3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lblExibeLado3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(51, 51, 51)
-                .addComponent(jButton1)
+                .addComponent(buttonVerificar)
                 .addContainerGap(75, Short.MAX_VALUE))
         );
 
@@ -188,7 +188,7 @@ public class TelaTriangulos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton buttonVerificar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
