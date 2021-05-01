@@ -80,6 +80,11 @@ public class TelaTriangulos extends javax.swing.JFrame {
         lblExibeLado3.setText("14");
 
         buttonVerificar.setText("VERIFICAR");
+        buttonVerificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonVerificarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -151,6 +156,10 @@ public class TelaTriangulos extends javax.swing.JFrame {
         int valorAtualSlider3 = sliderLado1.getValue();
         lblExibeLado3.setText(Integer.toString(valorAtualSlider3));
     }//GEN-LAST:event_sliderLado3StateChanged
+
+    private void buttonVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonVerificarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonVerificarActionPerformed
 
     /**
      * @param args the command line arguments
