@@ -33,6 +33,18 @@ public class TelaTriangulos extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        sliderLado1.setMaximum(27);
+        sliderLado1.setMinimum(1);
+        sliderLado1.setValue(14);
+
+        sliderLado2.setMaximum(27);
+        sliderLado2.setMinimum(1);
+        sliderLado2.setValue(14);
+
+        sliderLado3.setMaximum(27);
+        sliderLado3.setMinimum(1);
+        sliderLado3.setValue(14);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
