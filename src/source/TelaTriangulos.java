@@ -158,7 +158,9 @@ public class TelaTriangulos extends javax.swing.JFrame {
     }//GEN-LAST:event_sliderLado3StateChanged
 
     private void buttonVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonVerificarActionPerformed
-        // TODO add your handling code here:
+         int valorLado1 = sliderLado1.getValue();
+         int valorLado2 = sliderLado2.getValue();
+         int valorLado3 = sliderLado3.getValue();
     }//GEN-LAST:event_buttonVerificarActionPerformed
 
     /**
