@@ -148,12 +148,12 @@ public class TelaTriangulos extends javax.swing.JFrame {
     }//GEN-LAST:event_sliderLado1StateChanged
 
     private void sliderLado2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliderLado2StateChanged
-        int valorAtualSlider2 = sliderLado1.getValue();
+        int valorAtualSlider2 = sliderLado2.getValue();
         lblExibeLado2.setText(Integer.toString(valorAtualSlider2));
     }//GEN-LAST:event_sliderLado2StateChanged
 
     private void sliderLado3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliderLado3StateChanged
-        int valorAtualSlider3 = sliderLado1.getValue();
+        int valorAtualSlider3 = sliderLado3.getValue();
         lblExibeLado3.setText(Integer.toString(valorAtualSlider3));
     }//GEN-LAST:event_sliderLado3StateChanged
 
@@ -161,6 +161,12 @@ public class TelaTriangulos extends javax.swing.JFrame {
          int valorLado1 = sliderLado1.getValue();
          int valorLado2 = sliderLado2.getValue();
          int valorLado3 = sliderLado3.getValue();
+         
+         if((valorLado1 < valorLado2+valorLado3 && valorLado1 > valorLado2 - valorLado3) && (valorLado2 < valorLado1+valorLado3 && valorLado2> valorLado1-valorLado3) && (valorLado3 < valorLado1+valorLado2 && valorLado3 < valorLado1+valorLado2)){
+             System.out.println("funfou");
+         }
+         
+         
     }//GEN-LAST:event_buttonVerificarActionPerformed
 
     /**
