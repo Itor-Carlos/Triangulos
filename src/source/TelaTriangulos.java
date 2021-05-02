@@ -163,7 +163,9 @@ public class TelaTriangulos extends javax.swing.JFrame {
          int valorLado3 = sliderLado3.getValue();
          
          if((valorLado1 < valorLado2+valorLado3 && valorLado1 > valorLado2 - valorLado3) && (valorLado2 < valorLado1+valorLado3 && valorLado2> valorLado1-valorLado3) && (valorLado3 < valorLado1+valorLado2 && valorLado3 < valorLado1+valorLado2)){
-             System.out.println("funfou");
+             if(valorLado1 == valorLado2 && valorLado2 == valorLado3){
+                 
+             }
          }
          
          else{
