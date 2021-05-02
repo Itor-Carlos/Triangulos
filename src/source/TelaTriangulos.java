@@ -5,6 +5,9 @@
  */
 package source;
 
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author itor5
@@ -116,14 +119,11 @@ public class TelaTriangulos extends javax.swing.JFrame {
                 .addComponent(lblExibeTipoTriangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(67, 67, 67))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(lblExibeImagem, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(buttonVerificar)
-                        .addGap(346, 346, 346))))
+                .addGap(139, 139, 139)
+                .addComponent(buttonVerificar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblExibeImagem, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -137,9 +137,7 @@ public class TelaTriangulos extends javax.swing.JFrame {
                     .addComponent(lblExibeTipoTriangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblExibeImagem, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(156, Short.MAX_VALUE))
+                    .addComponent(lblExibeImagem, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -150,9 +148,9 @@ public class TelaTriangulos extends javax.swing.JFrame {
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(sliderLado3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblExibeLado3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(buttonVerificar)
-                        .addGap(62, 62, 62))))
+                        .addGap(99, 99, 99)
+                        .addComponent(buttonVerificar)))
+                .addContainerGap(70, Short.MAX_VALUE))
         );
 
         pack();
@@ -177,10 +175,14 @@ public class TelaTriangulos extends javax.swing.JFrame {
          int valorLado1 = sliderLado1.getValue();
          int valorLado2 = sliderLado2.getValue();
          int valorLado3 = sliderLado3.getValue();
+         String location = System.getProperty("user.dir");
+         Icon images;
+         
          
          if((valorLado1 < valorLado2+valorLado3 && valorLado1 > valorLado2 - valorLado3) && (valorLado2 < valorLado1+valorLado3 && valorLado2> valorLado1-valorLado3) && (valorLado3 < valorLado1+valorLado2 && valorLado3 < valorLado1+valorLado2)){
              if(valorLado1 == valorLado2 && valorLado2 == valorLado3){
-                 
+                 lblExibeTipoTriangulo.setText("EQUILATERO");
+                 lblExibeImagem.setIcon(new ImageIcon(location+"\\src\\images\\triangulo_equilatero.png"));
              }
          }
          
