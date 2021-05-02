@@ -179,36 +179,36 @@ public class TelaTriangulos extends javax.swing.JFrame {
     }//GEN-LAST:event_sliderLado3StateChanged
 
     private void buttonVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonVerificarActionPerformed
-         int valorLado1 = sliderLado1.getValue();
-         int valorLado2 = sliderLado2.getValue();
-         int valorLado3 = sliderLado3.getValue();
-         String location = System.getProperty("user.dir");
+         int valorLado1 = sliderLado1.getValue();//variavel que irá armazenar o valor do slider 1 quando o botao for clicado
+         int valorLado2 = sliderLado2.getValue();//variavel que irá armazenar o valor do slider 2 quando o botao for clicado
+         int valorLado3 = sliderLado3.getValue();//variavel que irá armazenar o valor do slider 3 quando o botao for clicado
+         String location = System.getProperty("user.dir");//a variavel location irá armazenar o valor atual do sistema do usuario
          Icon images;
          
          
-         if((valorLado1 < valorLado2+valorLado3 && valorLado1 > valorLado2 - valorLado3) && (valorLado2 < valorLado1+valorLado3 && valorLado2> valorLado1-valorLado3) && (valorLado3 < valorLado1+valorLado2 && valorLado3 < valorLado1+valorLado2)){
-             if(valorLado1 == valorLado2 && valorLado2 == valorLado3){
-                 lblExibeTipoTriangulo.setText("EQUILATERO");
-                 lblExibeImagem.setIcon(new ImageIcon(location+"\\src\\images\\triangulo_equilatero.png"));
+         if((valorLado1 < valorLado2+valorLado3 && valorLado1 > valorLado2 - valorLado3) && (valorLado2 < valorLado1+valorLado3 && valorLado2> valorLado1-valorLado3) && (valorLado3 < valorLado1+valorLado2 && valorLado3 < valorLado1+valorLado2)){//esse if será responsavel por verificar se os valores informados podem formar triangulo
+             if(valorLado1 == valorLado2 && valorLado2 == valorLado3){//teste se o triangulo criado é equilatero
+                 lblExibeTipoTriangulo.setText("EQUILATERO");//muda o texto para informar ao usuario o tipo de triangulo
+                 lblExibeImagem.setIcon(new ImageIcon(location+"\\src\\images\\triangulo_equilatero.png"));//muda a imagem para a imagem de um triangulo equilatero
              }
              
-             else if(valorLado1 != valorLado2 && valorLado1 != valorLado3 && valorLado2 != valorLado3){
-                 lblExibeTipoTriangulo.setText("Escanelo");
-                 lblExibeImagem.setIcon(new ImageIcon(location+"\\src\\images\\triangulo_escaleno.png"));
+             else if(valorLado1 != valorLado2 && valorLado1 != valorLado3 && valorLado2 != valorLado3){//teste se o triangulo criado é escaleno
+                 lblExibeTipoTriangulo.setText("ESCALENO");//muda o texto para informar ao usuario o tipo de triangulo
+                 lblExibeImagem.setIcon(new ImageIcon(location+"\\src\\images\\triangulo_escaleno.png"));//muda a imagem para a imagem de um triangulo escaleno
              }
              
-             else{
-                 lblExibeTipoTriangulo.setText("Isósceles");
-                 lblExibeImagem.setIcon(new ImageIcon(location+"\\src\\images\\triangulo_isosceles.png"));
+             else{//esse else será executado quandoo triangulo informado não for nem escaleno e nem equilatero
+                 lblExibeTipoTriangulo.setText("ISÓSCELES");//muda o texto para informar ao usuario o tipo de triangulo
+                 lblExibeImagem.setIcon(new ImageIcon(location+"\\src\\images\\triangulo_isosceles.png"));//muda a imagem para a imagem de um triangulo isosceles
              }
              
              
          }
          
-         else{
-             lblExibeImagem.setIcon(null);
-             lblExibeTipoTriangulo.setText("");
-             JOptionPane.showMessageDialog(null,"Os valores informados não formam triangulo","NÃO FOI POSSIVEL FORMAR TRIANGULO",JOptionPane.ERROR_MESSAGE);
+         else{//esse eelse será executado quando o triangulo não puder ser criado
+             lblExibeImagem.setIcon(null);//retira a imagem da tela
+             lblExibeTipoTriangulo.setText("");//retira o texto da tela
+             JOptionPane.showMessageDialog(null,"Os valores informados não formam triangulo","NÃO FOI POSSIVEL FORMAR TRIANGULO",JOptionPane.ERROR_MESSAGE);//exibe uma mensagem para o usuario dizendo que o triangulo não puder ser criado
          }
          
          
