@@ -7,6 +7,7 @@ package source;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -205,7 +206,9 @@ public class TelaTriangulos extends javax.swing.JFrame {
          }
          
          else{
-             System.out.println("Não forma triangulo");
+             lblExibeImagem.setIcon(null);
+             lblExibeTipoTriangulo.setText("");
+             JOptionPane.showMessageDialog(null,"Os valores informados não formam triangulo","NÃO FOI POSSIVEL FORMAR TRIANGULO",JOptionPane.ERROR_MESSAGE);
          }
          
          
