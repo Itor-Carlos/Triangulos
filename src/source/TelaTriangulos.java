@@ -196,6 +196,12 @@ public class TelaTriangulos extends javax.swing.JFrame {
                  lblExibeImagem.setIcon(new ImageIcon(location+"\\src\\images\\triangulo_escaleno.png"));
              }
              
+             else{
+                 lblExibeTipoTriangulo.setText("Isósceles");
+                 lblExibeImagem.setIcon(new ImageIcon(location+"\\src\\images\\triangulo_isosceles.png"));
+             }
+             
+             
          }
          
          else{
