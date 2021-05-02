@@ -166,6 +166,11 @@ public class TelaTriangulos extends javax.swing.JFrame {
              System.out.println("funfou");
          }
          
+         else{
+             System.out.println("Não forma triangulo");
+         }
+         
+         
          
     }//GEN-LAST:event_buttonVerificarActionPerformed
 
